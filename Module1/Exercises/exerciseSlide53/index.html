@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple JavaScript Function</title>
+    <style>
+        .button-style {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>A Simple JavaScript Function</h2>
+    <p id="demo"></p>
+    <button class="button-style" onclick="helloWorld(this)">Say Hello</button>
+    <script>
+        function helloWorld(button) {
+            alert('Hello World!');
+            button.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>

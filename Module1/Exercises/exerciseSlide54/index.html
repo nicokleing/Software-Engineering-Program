@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Flower Shop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1 id="header">The Flower Shop</h1>
+    </header>
+
+    <div class="main-content">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <ul>
+                    <li><a href="#">Red Rose</a></li>
+                    <li><a href="#">Yellow Tulip</a></li>
+                    <li><a href="#">White Lily</a></li>
+                    <li><a href="#">Bright Sunflower</a></li>
+                    <li><a href="#">Exotic Orchid</a></li>
+                    <li><a href="#">Delicate Daisy</a></li>
+                    <li><a href="#">Soft Cherry Blossom</a></li>
+                    <li><a href="#">Fragrant Hyacinth</a></li>
+                    <li><a href="#">Pink Peony</a></li>
+                    <li><a href="#">Aromatic Lavender</a></li>
+                </ul>
+            </ul>      
+        </nav>
+        
+        <div class="articles">
+            <article>
+                <h2>Spring Flowers</h2>
+                <p>Discover our beautiful spring collections.</p>
+                <img src="https://images.freeimages.com/images/large-previews/39a/spring-1377434.jpg" alt="Flowers" width="200" height="300">
+            </article>
+
+            <article>
+                <h2>Spring Flowers</h2>
+                <p>Discover our beautiful spring collections.</p>
+                <img src="https://images.freeimages.com/images/large-previews/39a/spring-1377434.jpg" alt="Flowers" width="200" height="300">
+            </article>
+
+            <article>
+                <h2>Spring Flowers</h2>
+                <p>Discover our beautiful spring collections.</p>
+                <img src="https://images.freeimages.com/images/large-previews/39a/spring-1377434.jpg" alt="Flowers" width="200" height="300">
+            </article>            
+        </div>
+    </div>
+
+    <aside id="aside">
+        <h2>Related Products</h2>
+        <div class="related-item">
+            <a href="#">Flower Care Tips</a>
+            <img src="https://images.freeimages.com/images/large-previews/39a/spring-1377434.jpg" alt="Alstroemeria Flowers" width="200" height="300">
+        </div>
+        <div class="related-item">
+            <a href="#">Latest Flower Trends</a>
+            <img src="https://images.freeimages.com/images/large-previews/39a/spring-1377434.jpg" alt="Alstroemeria Flowers" width="200" height="300">
+        </div>
+        <div class="related-item">
+            <a href="#">Flower Care Tips</a>
+            <img src="https://images.freeimages.com/images/large-previews/39a/spring-1377434.jpg" alt="Alstroemeria Flowers" width="200" height="300">
+        </div>
+    </aside>
+
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="button" id="submitButton">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>@copyright 2050 by Nicolas Klein. all rights reserved</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var submitButton = document.getElementById("submitButton");
+            submitButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                alert('Your order will be shipped soon.');
+            });
+        });
+    </script>
+</body>
+</html>
